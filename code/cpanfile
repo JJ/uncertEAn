@@ -1,1 +1,2 @@
 requires "Math::Random::NormalDistribution";
+requires "Statistics::Basic";

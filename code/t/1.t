@@ -4,6 +4,7 @@ use lib qw(../lib lib);
 
 use v5.14;
 use Test::More;
+use Statistics::Basic qw(mean median);
 
 use constant TESTS    => 100;
 
@@ -21,9 +22,10 @@ for my $n (0..6) {
 
 for my $s (@strings) {
   say "$s → ";
+  my @var;
   for (my $i = 0; $i < TESTS; $i ++ ) {
-    my $foo =  $skew->apply( $s );
-    say($foo);
+    push @var,  $skew->apply( $s );
+    say "Median → ", median(@var),  " Mean → ", mean(@var), 
   }
 }
 
