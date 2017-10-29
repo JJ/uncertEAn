@@ -100,13 +100,11 @@ my $generation = Algorithm::Evolutionary::Op::Generation_Skeleton_Ref->new( $noi
 my $inicioTiempo = [gettimeofday()];
 
 #----------------------------------------------------------#
-for ( @pop ) {
-    if ( !defined $_->Fitness() ) {
-	$_->evaluate( $noisy );
-    }
-}
 
 do {
+  for ( @pop ) { # Reevaluate always before applying genetic operators
+    $_->evaluate( $noisy );
+  }
   $generation->apply( \@pop );
   $io->print( { evals => $noisy->evaluations(),
 		best => $pop[0] } );

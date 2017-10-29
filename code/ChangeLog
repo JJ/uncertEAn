@@ -1,0 +1,4 @@
+2017-10-29  Juan J. merelo  <jmerelo@penny>
+
+	* PoC.pl (Algorithm): Adding reevaluation every generation to actually reflect the noisy nature of the algorithm. Also changes top evaluations to 500k
+
