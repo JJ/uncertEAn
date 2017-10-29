@@ -1,0 +1,283 @@
+---
+ID: 4trap-10-rr05-p1k-base
+arch: x86_64-linux
+best_fitness: 40
+chromosome_length: 40
+max_evals: 500000
+noise_sigma: 0.4
+number_of_bits: 4
+population_size: 1024
+replacement_rate: 0.5
+uname: 'linux penny 3.13.0-34-generic #60-ubuntu smp wed aug 13 15:45:27 utc 2014 x86_64 x86_64 x86_64 gnulinux '
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 26.9613567289352
+  _length: 40
+  _str: 0000100000000011111110001100111111110100
+evals: 1538
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 26.7669282527761
+  _length: 40
+  _str: 0000100000000011111110001100111111110100
+evals: 3076
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 28.1624228296356
+  _length: 40
+  _str: 1111011011110101111110001000010011111111
+evals: 4614
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 28.3115889381318
+  _length: 40
+  _str: 1111011011110101111110001000010011111111
+evals: 6152
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 31.7111107431754
+  _length: 40
+  _str: 0000000111111010111111110001000011111111
+evals: 7690
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 31.2759878264482
+  _length: 40
+  _str: 0000000111111010111111110001000011111111
+evals: 9228
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 31.7024535028113
+  _length: 40
+  _str: 0000000111111010111111110001000011111111
+evals: 10766
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 31.6037304275491
+  _length: 40
+  _str: 1000111111111100111100100010111111111111
+evals: 12304
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 33.4872254954755
+  _length: 40
+  _str: 1000111111110000111100100010111111111111
+evals: 13842
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 32.9364739304084
+  _length: 40
+  _str: 1000111111110000111100100010111111111111
+evals: 15380
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 35.7298389421754
+  _length: 40
+  _str: 1111010011111111111100101111111111110000
+evals: 16918
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 35.4629068210091
+  _length: 40
+  _str: 1111010011111111111100101111111111110000
+evals: 18456
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 36.8062689096885
+  _length: 40
+  _str: 1111111111110000000111110000111111111111
+evals: 19994
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 36.8548452069956
+  _length: 40
+  _str: 1111111111110000000111110000111111111111
+evals: 21532
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 36.3816875586836
+  _length: 40
+  _str: 1111010011110000111111110000111111111111
+evals: 23070
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 36.6968198433231
+  _length: 40
+  _str: 1111111111110000000011110000111111110000
+evals: 24608
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 37.5987777337398
+  _length: 40
+  _str: 1111000011110000111111110000111111111111
+evals: 26146
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 37.8499782057163
+  _length: 40
+  _str: 1111111111110000111111110000111111110000
+evals: 27684
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 38.1743899265608
+  _length: 40
+  _str: 1111000011110000111111110000111111111111
+evals: 29222
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 38.8655619721605
+  _length: 40
+  _str: 1111111111111111000011110000111111111111
+evals: 30760
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 38.5617754601526
+  _length: 40
+  _str: 1111111111111111000011110000111111111111
+evals: 32298
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 38.8599401624427
+  _length: 40
+  _str: 1111111111110000111111110000111111111111
+evals: 33836
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 39.1790496719105
+  _length: 40
+  _str: 1111111111110000111111110000111111111111
+evals: 35374
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 39.0031506030134
+  _length: 40
+  _str: 1111111111110000111111110000111111111111
+evals: 36912
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 39.6936079422016
+  _length: 40
+  _str: 1111111111110000111111111111111111111111
+evals: 38450
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 40.1917448890175
+  _length: 40
+  _str: 1111111111110000111111111111111111111111
+evals: 39988
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 40.0248322268179
+  _length: 40
+  _str: 1111111111110000111111111111111111111111
+evals: 41526
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 40.1658579180395
+  _length: 40
+  _str: 1111111111111111000011111111111111111111
+evals: 43064
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: 40.6576137237946
+  _length: 40
+  _str: 1111111111111111111111111111111111111111
+evals: 44602
+---
+end:
+  best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+    _chars:
+      - 0
+      - 1
+    _fitness: 40.6576137237946
+    _length: 40
+    _str: 1111111111111111111111111111111111111111
+  evaluations: 44602
+  time: 1.399593
