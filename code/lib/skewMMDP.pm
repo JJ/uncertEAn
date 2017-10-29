@@ -15,7 +15,9 @@ skewMMDP - Massively Multimodal Deceptive Problem with skewed uncertainty
 
     my $fitness_object = skewMMDP->new()
     $fitness = $fitness_object->apply( $chromosome)
+
 #and again
+
     $fitness = $fitness_object->apply( $chromosome)
 
 

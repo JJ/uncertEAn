@@ -5,6 +5,7 @@ use lib qw(../lib lib);
 use v5.14;
 use Test::More;
 use Statistics::Basic qw(mean median);
+use Number::Format qw(:subs);
 
 use constant TESTS    => 100;
 
@@ -21,12 +22,14 @@ for my $n (0..6) {
 }
 
 for my $s (@strings) {
-  say "$s → ";
   my @var;
   for (my $i = 0; $i < TESTS; $i ++ ) {
     push @var,  $skew->apply( $s );
-    say "Median → ", median(@var),  " Mean → ", mean(@var), 
   }
+  my $median = round(median(@var),6);
+  my $mean = round(mean(@var),6);
+  isnt( $median, $mean, "Realy skewed for $s")
+
 }
 
 done_testing();
