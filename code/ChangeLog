@@ -1,4 +1,7 @@
 2017-10-29  Juan J. merelo  <jmerelo@penny>
 
+	* res-unc-rnd-p1024-ns0.1-cs40-rr0.5-2017-10-29T12:02:03.yaml (best): Making the evaluation random makes the problem even simpler, since it's actually kind of like a normal distribution at the end of the day.
+	
+
 	* PoC.pl (Algorithm): Adding reevaluation every generation to actually reflect the noisy nature of the algorithm. Also changes top evaluations to 500k
 
