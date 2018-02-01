@@ -1,3 +1,5 @@
 requires "Math::Random::NormalDistribution";
 requires "Statistics::Basic";
 requires "Number::Format";
+requires "IO::YAML";
+requires "YAML";
