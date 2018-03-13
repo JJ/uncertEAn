@@ -84,7 +84,7 @@ my $c = Algorithm::Evolutionary::Op::Crossover->new(2, $crossover_priority);
 # Fitness functions, noisy and not
 my $fitness_object = new  Algorithm::Evolutionary::Fitness::Trap( $number_of_bits); #for evaluation
 my $st = new  Algorithm::Evolutionary::Fitness::SkewTrap( $number_of_bits);
-my $noisy = new  Algorithm::Evolutionary::Fitness::Randomized( $st, { _skewness => { min => -1, range => 2}} );
+my $noisy = new  Algorithm::Evolutionary::Fitness::Randomized( $st, { _skewness => { min => -1, range => 2}} ); # Randomizes every application of the fitness function
 
 #----------------------------------------------------------#
 # Usamos estos operadores para definir una generación del algoritmo. Lo cual
