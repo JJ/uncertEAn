@@ -1,0 +1,4 @@
+2018-03-13  Juan J. merelo  <jmerelo@penny>
+
+	*  (Warning): Tests randomness of new fitness function, adds to skew-random.csv
+
