@@ -56,7 +56,8 @@ sub new {
   my $sd = shift || 0.1; 
   my $rate = shift || 1;
 
-  my $self = new Algorithm::Evolutionary::Op::BitFlip( $rate );
+  my $self = new Algorithm::Evolutionary::Op::Bitflip( $rate );
+  bless $self, $class;
   $self->{'_rng'} = sub { return random_normal( 1, 1, $sd ) };
   return $self;
 }
