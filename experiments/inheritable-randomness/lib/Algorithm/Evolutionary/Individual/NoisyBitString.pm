@@ -31,6 +31,8 @@ our $VERSION =  '0.0.1';
 
 use base 'Algorithm::Evolutionary::Individual::BitString';
 
+use Algorithm::Evolutionary::Individual::Skewed;
+
 use constant MY_OPERATORS => ( Algorithm::Evolutionary::Individual::String::MY_OPERATORS, 
 			       qw(Algorithm::Evolutionary::Op::BitFlip Algorithm::Evolutionary::Op::Mutation )); 
 
@@ -46,14 +48,30 @@ uniform distribution of bits. Options as in L<Algorithm::Evolutionary::Individua
 =cut
 
 sub new {
-  my $class = shift; 
+  my $class = shift;
+  my $fitness_function = shift;
   my $self = 
     Algorithm::Evolutionary::Individual::BitString::new( 'Algorithm::Evolutionary::Individual::BitString' );
+
+
   $self->{'_skewness'} = shift || 1;
   $self->{'_normal_sigma'} = shift || 0.1;
+  $self->{'_skewed_fitness'} = new Algorithm::Evolutionary::Fitness::Skewed( $trap, $self->{'_skewness'}, $self->{'_normal_sigma'} ); 
   return $self;
 }
 
+=head2 evaluate( )
+
+Evaluates itself. Overrides C<evaluate> in base, which needs a fitness function or object
+
+=cut
+
+sub evaluate {
+  my $self = shift;
+  my $fitness_func = $self->{'_skewed_fitness'};
+  return $self->Fitness( $fitness_func->($self) );
+
+}
 
 =head2 Copyright
   
