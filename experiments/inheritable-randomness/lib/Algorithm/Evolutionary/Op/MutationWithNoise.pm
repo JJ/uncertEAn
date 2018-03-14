@@ -9,13 +9,11 @@ Algorithm::Evolutionary::Op::MutationWithNoise - Mutates also "noisy" components
 
   use Algorithm::Evolutionary::Op::MutationWithNoise;
 
-
   #Create from scratch
-  my $op = new Algorithm::Evolutionary::Op::NoisyMutation (0.5 ); 
+  my $op = new Algorithm::Evolutionary::Op::MutationWithNoise; 
 
   #All options
-  my $priority = 1;
-  my $mutation = new Algorithm::Evolutionary::Op::Mutation 1/$length, $priority;
+  my $mutation = new Algorithm::Evolutionary::Op::MutationWithNoise 0,1;
 
 =head1 Base Class
 
