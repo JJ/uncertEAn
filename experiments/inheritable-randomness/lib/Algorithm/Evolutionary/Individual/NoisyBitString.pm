@@ -52,7 +52,7 @@ sub new {
   my $class = shift;
   my $fitness_function = shift;
   my $self = 
-    Algorithm::Evolutionary::Individual::BitString::new( 'Algorithm::Evolutionary::Individual::BitString' );
+    Algorithm::Evolutionary::Individual::BitString::new( 'Algorithm::Evolutionary::Individual::NoisyBitString' );
 
 
   $self->{'_skewness'} = shift || 1;
