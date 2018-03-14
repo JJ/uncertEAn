@@ -25,13 +25,14 @@ Noisy Bitstring Individual for a Genetic Algorithm. Used in evolution with uncer
 
 package Algorithm::Evolutionary::Individual::NoisyBitString;
 
+use lib qw( /home/jmerelo/proyectos/CPAN/Algorithm-Evolutionary/lib );
 use Carp;
 
 our $VERSION =  '0.0.1';
 
 use base 'Algorithm::Evolutionary::Individual::BitString';
 
-use Algorithm::Evolutionary::Individual::Skewed;
+use Algorithm::Evolutionary::Fitness::Skewed;
 
 use constant MY_OPERATORS => ( Algorithm::Evolutionary::Individual::String::MY_OPERATORS, 
 			       qw(Algorithm::Evolutionary::Op::BitFlip Algorithm::Evolutionary::Op::Mutation )); 
@@ -56,7 +57,7 @@ sub new {
 
   $self->{'_skewness'} = shift || 1;
   $self->{'_normal_sigma'} = shift || 0.1;
-  $self->{'_skewed_fitness'} = new Algorithm::Evolutionary::Fitness::Skewed( $trap, $self->{'_skewness'}, $self->{'_normal_sigma'} ); 
+  $self->{'_skewed_fitness'} = new Algorithm::Evolutionary::Fitness::Skewed( $fitness_function, $self->{'_skewness'}, $self->{'_normal_sigma'} ); 
   return $self;
 }
 
